@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/*GENERALS*/
+:root {
+  --BrightOrange: hsl(31, 77%, 52%);
+  --DarkCyan: hsl(184, 100%, 22%);
+  --VeryDarkcCyan: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --background-headings-buttons: hsl(0, 0%, 95%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+h3 {
+  font-weight: 700;
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--background-headings-buttons);
+  font-size: 32px;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: var(--paragraphs);
+  line-height: 2;
+}
+button {
+  border: 1px solid var(--background-headings-buttons);
+  background-color: var(--background-headings-buttons);
+  color: var(--background-headings-buttons);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 15px;
+}
+button:active {
+  background-color: rgba(00, 00, 00, 00);
+  color: var(--background-headings-buttons) !important;
+  transition: 0.5s;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: var(--background-headings-buttons);
+  padding: 40px;
+}
+/*preview cads*/
+
+/*CARDS*/
+.card {
+  padding: clamp(1.25rem, -0.3125rem + 5vw, 2.5rem);
+}
+.card h3 {
+  margin: 20px 0;
+}
+.card p {
+  margin-bottom: 70px;
+  width: 210px;
+  height: 150px;
+}
+/*CARDS CHILD*/
+.card:nth-child(1) {
+  background-color: var(--BrightOrange);
+}
+.card:nth-child(1) button {
+  color: var(--BrightOrange);
+}
+
+.card:nth-child(2) {
+  background-color: var(--DarkCyan);
+}
+.card:nth-child(2) button {
+  color: var(--DarkCyan);
+}
+
+.card:nth-child(3) {
+  background-color: var(--VeryDarkcCyan);
+}
+.card:nth-child(3) button {
+  color: var(--VeryDarkcCyan);
+}
+/*MEDIA 768PX*/
+@media (max-width: 768px) {
+  .preview-cards {
+    flex-direction: column;
+  }
+  .card p {
+    margin-bottom: 20px;
+  }
+}
+/*ATT */
+.attribution {
+  padding: 40px 0;
+  flex-wrap: wrap;
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
